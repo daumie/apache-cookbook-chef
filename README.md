@@ -36,3 +36,11 @@ The run list is incredibly important to understand. It tells the chef-client exa
 
 A resource again is a statement of configuration policy. And actually most built in Chef resources can accomplish the configuration tasks that you need. Chef resources are designed to describe configurations on many different platforms and be versatile enough to fit your needs. In other words use Chef resources whenever possible.
 
+# ohai
+
+ Ohai is the tool that will actually gather host-specific details for you. And it will present them to you in json. This is, quite literally, a command line tool, called Ohai
+
+# node
+
+ohai stores all this information in an object you can query called Node, the node object. The Node Object is going to be this json representation of our system. It stores all of the values that we gather with Ohai as attributes. We call the values on the node object, like IP Address and hostname, node attributes. The structure of the Node Object is very similar to json.
+
